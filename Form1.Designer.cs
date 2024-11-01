@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             gpxInicial = new GroupBox();
             lblJogadorO = new Label();
             LblJogadorX = new Label();
@@ -42,8 +43,8 @@
             btn5 = new Button();
             btn4 = new Button();
             btn3 = new Button();
-            btn2 = new Button();
             btn1 = new Button();
+            btn2 = new Button();
             gpxInicial.SuspendLayout();
             gpxButtons.SuspendLayout();
             SuspendLayout();
@@ -81,38 +82,44 @@
             // 
             // btnIniciar
             // 
+            btnIniciar.BackColor = Color.White;
             btnIniciar.Enabled = false;
+            btnIniciar.FlatStyle = FlatStyle.Flat;
             btnIniciar.Font = new Font("Old English Text MT", 30F);
-            btnIniciar.Location = new Point(182, 185);
+            btnIniciar.Location = new Point(216, 185);
             btnIniciar.Name = "btnIniciar";
             btnIniciar.Size = new Size(218, 88);
             btnIniciar.TabIndex = 2;
             btnIniciar.Text = "Iniciar";
-            btnIniciar.UseVisualStyleBackColor = true;
+            btnIniciar.UseVisualStyleBackColor = false;
             btnIniciar.Click += btnIniciar_Click;
             // 
             // btnO
             // 
-            btnO.Font = new Font("Old English Text MT", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnO.BackColor = Color.Blue;
+            btnO.FlatStyle = FlatStyle.Flat;
+            btnO.Font = new Font("Papyrus", 52F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnO.ImageAlign = ContentAlignment.TopCenter;
             btnO.Location = new Point(6, 280);
             btnO.Name = "btnO";
             btnO.Size = new Size(158, 149);
             btnO.TabIndex = 1;
             btnO.Text = "O";
-            btnO.UseVisualStyleBackColor = true;
+            btnO.UseVisualStyleBackColor = false;
             btnO.Click += btnO_Click;
             // 
             // btnX
             // 
-            btnX.Font = new Font("Old English Text MT", 60F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnX.BackColor = Color.Red;
+            btnX.FlatStyle = FlatStyle.Flat;
+            btnX.Font = new Font("Papyrus", 52F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnX.ImageAlign = ContentAlignment.TopCenter;
             btnX.Location = new Point(6, 30);
             btnX.Name = "btnX";
             btnX.Size = new Size(158, 149);
             btnX.TabIndex = 0;
             btnX.Text = "X";
-            btnX.UseVisualStyleBackColor = true;
+            btnX.UseVisualStyleBackColor = false;
             btnX.Click += btnX_Click;
             // 
             // gpxButtons
@@ -134,99 +141,126 @@
             // 
             // btn9
             // 
-            btn9.Font = new Font("Old English Text MT", 60F);
+            btn9.BackColor = Color.White;
+            btn9.FlatStyle = FlatStyle.Flat;
+            btn9.Font = new Font("Papyrus", 52F);
             btn9.Location = new Point(403, 340);
             btn9.Name = "btn9";
             btn9.Size = new Size(199, 149);
             btn9.TabIndex = 8;
             btn9.Text = "O";
-            btn9.UseVisualStyleBackColor = true;
+            btn9.UseVisualStyleBackColor = false;
+            btn9.Click += btn9_Click;
             // 
             // btn8
             // 
-            btn8.Font = new Font("Old English Text MT", 60F);
+            btn8.BackColor = Color.White;
+            btn8.FlatStyle = FlatStyle.Flat;
+            btn8.Font = new Font("Papyrus", 52F);
             btn8.Location = new Point(203, 340);
             btn8.Name = "btn8";
             btn8.Size = new Size(199, 149);
             btn8.TabIndex = 7;
             btn8.Text = "O";
-            btn8.UseVisualStyleBackColor = true;
+            btn8.UseVisualStyleBackColor = false;
+            btn8.Click += btn8_Click;
             // 
             // btn7
             // 
-            btn7.Font = new Font("Old English Text MT", 60F);
+            btn7.BackColor = Color.White;
+            btn7.FlatStyle = FlatStyle.Flat;
+            btn7.Font = new Font("Papyrus", 52F);
             btn7.Location = new Point(3, 340);
             btn7.Name = "btn7";
             btn7.Size = new Size(199, 149);
             btn7.TabIndex = 6;
             btn7.Text = "O";
-            btn7.UseVisualStyleBackColor = true;
+            btn7.UseVisualStyleBackColor = false;
+            btn7.Click += btn7_Click;
             // 
             // btn6
             // 
-            btn6.Font = new Font("Old English Text MT", 60F);
+            btn6.BackColor = Color.White;
+            btn6.FlatStyle = FlatStyle.Flat;
+            btn6.Font = new Font("Papyrus", 52F);
             btn6.Location = new Point(404, 185);
             btn6.Name = "btn6";
             btn6.Size = new Size(199, 149);
             btn6.TabIndex = 5;
             btn6.Text = "O";
-            btn6.UseVisualStyleBackColor = true;
+            btn6.UseVisualStyleBackColor = false;
+            btn6.Click += btn6_Click;
             // 
             // btn5
             // 
-            btn5.Font = new Font("Old English Text MT", 60F);
+            btn5.BackColor = Color.White;
+            btn5.FlatStyle = FlatStyle.Flat;
+            btn5.Font = new Font("Papyrus", 52F);
             btn5.Location = new Point(204, 185);
             btn5.Name = "btn5";
             btn5.Size = new Size(199, 149);
             btn5.TabIndex = 4;
             btn5.Text = "O";
-            btn5.UseVisualStyleBackColor = true;
+            btn5.UseVisualStyleBackColor = false;
+            btn5.Click += btn5_Click;
             // 
             // btn4
             // 
-            btn4.Font = new Font("Old English Text MT", 60F);
+            btn4.BackColor = Color.White;
+            btn4.FlatStyle = FlatStyle.Flat;
+            btn4.Font = new Font("Papyrus", 52F);
             btn4.Location = new Point(4, 185);
             btn4.Name = "btn4";
             btn4.Size = new Size(199, 149);
             btn4.TabIndex = 3;
             btn4.Text = "O";
-            btn4.UseVisualStyleBackColor = true;
+            btn4.UseVisualStyleBackColor = false;
+            btn4.Click += btn4_Click;
             // 
             // btn3
             // 
-            btn3.Font = new Font("Old English Text MT", 60F);
+            btn3.BackColor = Color.White;
+            btn3.FlatStyle = FlatStyle.Flat;
+            btn3.Font = new Font("Papyrus", 52F);
             btn3.Location = new Point(403, 30);
             btn3.Name = "btn3";
             btn3.Size = new Size(199, 149);
             btn3.TabIndex = 2;
             btn3.Text = "O";
-            btn3.UseVisualStyleBackColor = true;
+            btn3.UseVisualStyleBackColor = false;
+            btn3.Click += btn3_Click;
             // 
             // btn2
             // 
-            btn2.Font = new Font("Old English Text MT", 60F);
+            btn2.BackColor = Color.White;
+            btn2.FlatStyle = FlatStyle.Flat;
+            btn2.Font = new Font("Papyrus", 52F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn2.Location = new Point(203, 30);
             btn2.Name = "btn2";
             btn2.Size = new Size(199, 149);
             btn2.TabIndex = 1;
             btn2.Text = "O";
-            btn2.UseVisualStyleBackColor = true;
+            btn2.UseVisualStyleBackColor = false;
+            btn2.Click += btn2_Click;
             // 
             // btn1
             // 
-            btn1.Font = new Font("Old English Text MT", 60F);
+            btn1.BackColor = Color.White;
+            btn1.FlatStyle = FlatStyle.Flat;
+            btn1.Font = new Font("Papyrus", 52F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn1.Location = new Point(3, 30);
             btn1.Name = "btn1";
             btn1.Size = new Size(199, 149);
             btn1.TabIndex = 0;
             btn1.Text = "O";
-            btn1.UseVisualStyleBackColor = true;
+            btn1.UseVisualStyleBackColor = false;
             btn1.Click += btn1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1151, 545);
             Controls.Add(gpxButtons);
             Controls.Add(gpxInicial);
